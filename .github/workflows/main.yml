@@ -1,0 +1,30 @@
+name: CI/CD
+
+on: [push, pull_request]
+
+env:
+  GO_VERSION: 1.20
+  RUST_VERSION: stable
+
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Go build and test
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: ${{ env.GO_VERSION }}
+
+      - name: Go build for common architectures
+        run: |
+          for os in "linux" "darwin" "windows"; do
+            for arch in "amd64" "arm64"; do
+              echo "Building Go project for $os/$arch..."
+              env GOOS="$os" GOARCH="$arch" go build -o go_output/${{ github.sha }}_${os}_${arch} ./lang/go/main.go
+            done
+          done
