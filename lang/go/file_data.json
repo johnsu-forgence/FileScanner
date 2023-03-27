@@ -1,0 +1,74 @@
+{
+  "host_data": {
+    "hostname": "Expeditus",
+    "uptime": 891312,
+    "bootTime": 1679059269,
+    "procs": 274,
+    "os": "windows",
+    "platform": "Microsoft Windows 11 Home",
+    "platformFamily": "Standalone Workstation",
+    "platformVersion": "10.0.25314 Build 25314",
+    "kernelVersion": "10.0.25314 Build 25314",
+    "kernelArch": "x86_64",
+    "virtualizationSystem": "",
+    "virtualizationRole": "",
+    "hostid": "8c238aff-0b65-4a9b-87fc-313f4fe70237"
+  },
+  "flag_data": {
+    "debug": false,
+    "start_dir": ".",
+    "scan_sub_dirs": true,
+    "output_file": "file_data.json",
+    "concurrency": 10
+  },
+  "file_data": [
+    {
+      "file_path": "C:\\Users\\lordz\\go\\src\\FileScanner\\lang\\go\\go.mod",
+      "file_name": "go.mod",
+      "extension": ".mod",
+      "size": 385,
+      "mod_time": "2023-03-27T11:04:22.1730802-05:00",
+      "is_dir": false,
+      "permissions": 438,
+      "md5": "911f63deb965f6aef63d90541ac6dd0e",
+      "sha1": "1631254a5d5ed37fd9715677273bccdb36533cc9",
+      "sha256": "4d27f0c6bfa9f8d8e1543ee50e769488dc2da9c7d29eeba68c672689d1b6ead2"
+    },
+    {
+      "file_path": "C:\\Users\\lordz\\go\\src\\FileScanner\\lang\\go\\go.sum",
+      "file_name": "go.sum",
+      "extension": ".sum",
+      "size": 2649,
+      "mod_time": "2023-03-27T11:04:22.1719795-05:00",
+      "is_dir": false,
+      "permissions": 438,
+      "md5": "98b077657e5a270e84c93b815f5b14c6",
+      "sha1": "6d411eb9d4b17ba2bce30abf186878dd35946681",
+      "sha256": "0e3231815920b12d1738eb54899c0f4e9b6ef58a47aef542f2654a316e3aa55a"
+    },
+    {
+      "file_path": "C:\\Users\\lordz\\go\\src\\FileScanner\\lang\\go\\main.go",
+      "file_name": "main.go",
+      "extension": ".go",
+      "size": 4872,
+      "mod_time": "2023-03-26T19:37:36.7889283-05:00",
+      "is_dir": false,
+      "permissions": 438,
+      "md5": "6e9c5468bd9378f86881ab86fa9101b9",
+      "sha1": "4c0042d7583713f09f1bf7152570e44d7c233b7e",
+      "sha256": "0480ff3dfd0a66d6db34f0a4a08403b5cbe368a051d8b83c1d80a63045f0f0e4"
+    },
+    {
+      "file_path": "C:\\Users\\lordz\\go\\src\\FileScanner\\lang\\go\\go.exe",
+      "file_name": "go.exe",
+      "extension": ".exe",
+      "size": 3145216,
+      "mod_time": "2023-03-27T15:55:40.7900341-05:00",
+      "is_dir": false,
+      "permissions": 438,
+      "md5": "1cbeb0b944e8dff708c7bd3206778a74",
+      "sha1": "4953511fbef4ca86612d46d2295b5e22ec0541c2",
+      "sha256": "b2ee74fcf855177c47c658f3aadf38edbe394b7dec75ac499c039c4133ebfcd7"
+    }
+  ]
+}
