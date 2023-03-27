@@ -1,0 +1,22 @@
+[package]
+name = "file_info_collector"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+crypto-hash = "0.3.4"
+serde = { version = "1.0", features = ["derive"] }
+walkdir = "2.3.2"
+serde_json = "1.0"
+rayon = "1.5"
+clap = "3.0"
+hex = "0.4"
+md-5 = "0.9.1"
+sha-1 = "0.9.7"
+sha2 = "0.9.6"
+
+[[bin]]
+name = "rust"
+path = "./src/main.rs"
