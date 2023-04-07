@@ -45,7 +45,7 @@ jobs:
         draft: false
         prerelease: false
 
-    - name: Upload Release Assets
+    - name: Upload Windows Asset
       uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -54,11 +54,21 @@ jobs:
         asset_path: ./safnari-windows-amd64.exe
         asset_name: safnari-windows-amd64.exe
         asset_content_type: application/octet-stream
+
+    - name: Upload macOS Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./safnari-darwin-amd64
         asset_name: safnari-darwin-amd64
         asset_content_type: application/octet-stream
+
+    - name: Upload Linux Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./safnari-linux-amd64
